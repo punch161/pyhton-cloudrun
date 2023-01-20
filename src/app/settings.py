@@ -94,8 +94,7 @@ DATABASES = {"default": env.db()}
 
 # If the flag as been set, configure to use proxy
 if os.getenv("USE_CLOUD_SQL_AUTH_PROXY", None):
-    # DATABASES["default"]["HOST"] = "cloudsql-proxy"
-    DATABASES["default"]["HOST"] = "127.0.0.1"
+    DATABASES["default"]["HOST"] = "cloudsql-proxy"
     DATABASES["default"]["PORT"] = 5432
 
 # Password validation
